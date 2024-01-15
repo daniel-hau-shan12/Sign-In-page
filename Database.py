@@ -40,6 +40,11 @@ def signup():
     messagebox.showerror("Invalid", "Both Password should match")
 
 
+
+def sign():
+  window.destroy()
+  import signin
+
 img = PhotoImage(file="login (1).png")
 Label(window, image=img, border=0, bg="white").place(x=50, y=90)
 
@@ -148,7 +153,8 @@ signin = Button(frame,
                 border=0,
                 bg="white",
                 cursor="hand2",
-                fg="#57a1f8")
+                fg="#57a1f8",
+                command=sign)
 signin.place(x=200, y=340)
 
 window.mainloop()
